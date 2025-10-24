@@ -2,6 +2,11 @@ function stringLength(str, maxLength) {
   return str.length <= maxLength;
 }
 
-console.log(stringLength('gthdggrtg', 20));
-
-console.log(stringLength('ddfdfsw', 20));
+function palindrom(str) {
+  let strNormalized = str.replaceAll(' ', '').toLowerCase();
+  let strReverse = '';
+  for (let i = strNormalized.length - 1; i >= 0; i--) {
+    strReverse += strNormalized[i];
+  }
+  return strReverse === strNormalized;
+}
