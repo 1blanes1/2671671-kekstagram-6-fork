@@ -90,3 +90,4 @@ const initBigPicture = () => {
 };
 
 export { initBigPicture };
+
